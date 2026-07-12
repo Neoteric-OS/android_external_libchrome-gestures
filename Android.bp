@@ -124,6 +124,9 @@ cc_library_static {
         "//frameworks/native/services/inputflinger:__subpackages__",
     ],
     rtti: true,
+    lto: {
+        never: true,
+    },
     host_supported: true,
 }
 
